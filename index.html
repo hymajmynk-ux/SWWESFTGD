@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#1a0d08">
+  <title>مدرسة البابا أثناسيوس الرسولي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loginPage" class="page login-page">
+    <div class="image-bg"></div>
+    <div class="image-vignette"></div>
+
+    <div class="brand-top">
+      <span class="cross">✝</span>
+      <div>
+        <small>مدرسة الشمامسة</small>
+        <strong>مدرسة البابا أثناسيوس الرسولي</strong>
+      </div>
+    </div>
+
+    <section class="login-card glass">
+      <div class="login-icon">✝</div>
+      <p class="kicker">أهلاً بيك يا خادم ❤️</p>
+      <h1>سجّل دخولك</h1>
+      <p class="login-subtitle">وجودك معانا يفرق، وحضورك كل خميس له نقطة جديدة ⭐</p>
+
+      <form id="loginForm">
+        <label for="username">اسم المستخدم</label>
+        <input id="username" autocomplete="username" placeholder="اكتب اسم المستخدم" required>
+
+        <label for="password">كلمة المرور</label>
+        <input id="password" type="password" autocomplete="current-password" placeholder="اكتب كلمة المرور" required>
+
+        <button class="main-btn" type="submit">دخول <span>←</span></button>
+        <p id="loginError" class="error"></p>
+      </form>
+
+      <div class="quote">«كونوا ثابتين، غير متزعزعين، مكثرين في عمل الرب كل حين»</div>
+    </section>
+
+    <div class="scroll-hint">مدرسة الشمامسة • مع بعض نكبر في الخدمة <span>⌄</span></div>
+  </div>
+
+  <div id="homePage" class="page home-page hidden">
+    <header class="nav">
+      <div>
+        <small>مدرسة الشمامسة</small>
+        <h2>البابا أثناسيوس الرسولي ✝</h2>
+      </div>
+      <button id="logoutBtn" class="logout">خروج</button>
+    </header>
+
+    <main class="content">
+      <section class="welcome-card glass">
+        <div class="school-title">✝ مدرسة البابا أثناسيوس الرسولي</div>
+        <p class="kicker">نورتنا يا <span id="userName"></span> ❤️</p>
+        <h1>أهلاً بيك في بيتك التاني ✨</h1>
+        <p>وجودك وسط إخواتك بركة، وكل مرة تحضر فيها بتخطّي خطوة جديدة في طريق الخدمة والمحبة. ربنا يفرّح قلبك ويبارك تعبك دايمًا.</p>
+      </section>
+
+      <section class="stats stats-three">
+        <div class="stat glass"><b id="points">0</b><span>⭐ النقاط</span></div>
+        <div class="stat glass"><b id="days">0</b><span>🔥 أيام السجل</span></div>
+        <div class="stat glass total-stat"><b id="total">0</b><span>👥 المجموع</span></div>
+      </section>
+
+      <section class="group-card glass">
+        <div class="group-icon">👥</div>
+        <div class="group-copy">
+          <p class="kicker">المجموع</p>
+          <h3>كل حضور بيتحسب ❤️</h3>
+          <p>كل مرة تسجّل فيها حضورك يوم الخميس تتحسب تلقائيًا في المجموع، وكمان تظهر في السجل بالتاريخ والوقت.</p>
+          <div class="group-meta">
+            <span>إجمالي مرات الحضور</span>
+            <strong id="groupCount">0 حضور</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="attendance glass">
+        <div class="section-head">
+          <div>
+            <p class="kicker">تسجيل الحضور</p>
+            <h3 id="todayTitle"></h3>
+          </div>
+          <span class="time-badge">الخميس • 9 م</span>
+        </div>
+        <p id="attendanceMessage" class="muted"></p>
+        <button id="attendanceBtn" class="main-btn">سجّل حضوري +10 ⭐</button>
+      </section>
+
+      <section class="thursdays glass">
+        <div class="section-head">
+          <div>
+            <p class="kicker">مواعيدنا</p>
+            <h3>خميس الشمامسة</h3>
+          </div>
+          <span class="muted small">المواعيد القادمة</span>
+        </div>
+        <div id="thursdayList"></div>
+      </section>
+
+      <section class="history glass">
+        <div class="section-head"><h3>سجل حضورك</h3><span class="muted small">آخر 10 مرات</span></div>
+        <div id="historyList"></div>
+      </section>
+
+      <section class="message glass">
+        <div class="message-cross">✝</div>
+        <div>
+          <h3>رسالة صغيرة ❤️</h3>
+          <p>الخدمة مش بس وقت بنقضيه، دي محبة بنعيشها. ربنا يبارك تعب محبتك ويفرح قلبك دايمًا.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
